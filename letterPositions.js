@@ -24,7 +24,6 @@ const eqArrays = function(array1, array2)  {
   return true;
 }*/
 
-let string = "lighthouse in the house!"
 const letterPositions = (str) => {
   const countObj = {};
   const strLower = str.toLowerCase();
@@ -36,11 +35,14 @@ const letterPositions = (str) => {
       } else {
         countObj[letter] += `, ${i}`
       }
-
+      
     }
   }
   return countObj;
 }
-const result = letterPositions(string);
-console.log(result)
+module.exports = letterPositions;
+
+// let string = "lighthouse in the house!"
+// const result = letterPositions(string);
+// console.log(result)
 //assertArraysEqual(letterPositions("hello").e, [1]);
